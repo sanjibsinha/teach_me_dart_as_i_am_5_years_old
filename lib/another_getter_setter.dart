@@ -1,4 +1,18 @@
-import 'package:teach_me_dart_as_i_am_5_years_old/a_simple_class.dart';
+class AnotherGetterSetter {
+  // Creating a field
+  String _name;
+
+  // Using the getter
+  // method to take input
+  String get getName => _name;
+
+  // Using the setter method
+  // to set the input
+  set getName(String name) => _name = name;
+}
+
+/**
+ * import 'package:teach_me_dart_as_i_am_5_years_old/a_simple_class.dart';
 import 'package:teach_me_dart_as_i_am_5_years_old/another_getter_setter.dart';
 import 'package:teach_me_dart_as_i_am_5_years_old/bear_class.dart';
 
@@ -24,3 +38,5 @@ void main(List<String> arguments) {
 
   print('${anInstance.getName}');
 }
+
+ */
