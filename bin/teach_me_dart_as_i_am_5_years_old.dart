@@ -5,8 +5,7 @@ import 'package:teach_me_dart_as_i_am_5_years_old/bear_class.dart';
 void main(List<String> arguments) {
   var firstInstance = ASimpleClass();
   firstInstance.firstName = 'John';
-  firstInstance.setSecondName('Smith');
-  firstInstance.getSecondName;
+  firstInstance.getSecondName = 'Smith';
 
   var bear = Bear();
   bear.collarID = 1;
@@ -19,6 +18,7 @@ void main(List<String> arguments) {
 
   print(
       '${firstInstance.firstName} ${firstInstance.getSecondName}'); // John Smith
+  print('${firstInstance.getName()}'); // John Smith
 
   print('${bear.collarID} ${bear.getColor}'); // 1 Red
 
