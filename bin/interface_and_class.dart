@@ -10,6 +10,7 @@ class AClassImplementingInterfaceClass implements InterfaceClass {
   String name;
 }
 
+/// top level function
 void topLevelFunction(InterfaceClass interfaceClass) {
   interfaceClass.sayHello();
 }
