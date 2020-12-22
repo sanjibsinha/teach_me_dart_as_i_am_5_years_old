@@ -13,3 +13,20 @@ class AClassImplementingInterfaceClass implements InterfaceClass {
 void topLevelFunction(InterfaceClass interfaceClass) {
   interfaceClass.sayHello();
 }
+
+void main(List<String> args) {
+  var inter = InterfaceClass();
+  inter.name = 'Json';
+  topLevelFunction(inter);
+
+  var implementingClass = AClassImplementingInterfaceClass();
+  implementingClass.name = 'Web';
+  topLevelFunction(implementingClass);
+}
+
+/**
+ * output:
+ * Hello: Json
+Hello from implementing class: Web
+
+ */
