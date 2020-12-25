@@ -1,0 +1,25 @@
+class TestPrime {
+  int startingPoint = 1;
+  int endPoint = 0;
+  int factors = 0;
+  void testPrime(int testPrime) {
+    endPoint = testPrime;
+    for (startingPoint; startingPoint <= endPoint; startingPoint++) {
+      if (endPoint % startingPoint == 0) {
+        factors++;
+      }
+    }
+    if (factors <= 2) {
+      print('$endPoint is prime.');
+    } else {
+      print('$endPoint is not prime.');
+    }
+  }
+}
+
+void main(List<String> args) {
+  var testPrime = TestPrime();
+
+  /// pass any number to test whether it's prime or not
+  testPrime.testPrime(56); // 56 is not prime.
+}
